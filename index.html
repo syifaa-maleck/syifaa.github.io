@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+	body{
+   		margin:0;
+    		background-image:url('background1.png');
+    		background-size:cover;
+    		background-position:center;
+    		background-attachment:fixed;
+    		font-family:'Poppins', sans-serif;
+    		color:white;
+}
+
+	.overlay{
+    		min-height:100vh;
+		background:rgba(10,15,30,0.55);
+}
+
+	nav{
+    		display:flex;
+    		justify-content:space-between;
+    		align-items:center;
+    		padding:25px 70px;
+    		background:rgba(0,0,0,0.20);
+   		backdrop-filter:blur(6px);
+}
+
+	nav ul{
+    		list-style:none;
+    		display:flex;
+    		gap:40px;
+    		margin:0;
+    		padding:0;
+}
+
+	nav ul li a{
+    		text-decoration:none;
+    		color:#F2F4FF;
+    		font-size:15px;
+    		transition:0.3s;
+}
+
+	nav ul li a:hover{
+    		color:#B9C8FF;
+    		text-shadow:0 0 10px rgba(255,255,255,0.7);
+}
+
+
+	.hero{
+    		padding:140px 90px;
+
+}
+
+	.small-title{
+    		letter-spacing:4px;
+    		color:#B9C8FF;
+    		font-size:14px;
+    		margin-bottom:15px;
+}
+
+	.main-title{
+    		font-family:'Cormorant Garamond', serif;
+    		font-size:90px;
+    		line-height:90px;
+    		color:#ffffff;
+    		text-shadow:
+    		0 0 15px rgba(255,255,255,0.7);
+    		margin-bottom:25px;
+}
+
+	.quote{
+    		font-family:'Cormorant Garamond', serif;
+    		font-size:30px;
+    		font-style:italic;
+   		color:#DDE4FF;
+    		margin-bottom:45px;
+}
+
+	.btn{
+    		display:inline-block;
+    		padding:15px 35px;
+    		border-radius:40px;
+    		background:#B9C8FF;
+    		color:#111827;
+    		text-decoration:none;
+    		font-weight:600;
+    		transition:0.3s;
+}
+
+	.btn:hover{
+    		transform:scale(1.05);
+    		background:#DDE4FF;
+    		box-shadow:
+    		0 0 15px rgba(255,255,255,0.5);
+}
+
+
+	.card-section{
+    		display:flex;
+    		gap:30px;
+    		padding:0 90px 80px;
+    		flex-wrap:wrap;
+}
+
+	.card{
+    		width:350px;
+    		background:rgba(20,25,40,0.55);
+   		backdrop-filter:blur(10px);
+    		border-radius:25px;
+    		padding:25px;
+    		box-shadow:
+    		0 0 20px rgba(0,0,0,0.25);
+}
+
+	.card-title{
+    		font-family:'Cormorant Garamond', serif;
+    		font-size:35px;
+    		margin-bottom:20px;
+    		color:#E8ECFF;
+}
+
+	.card img{
+    		width:100%;
+   		border-radius:18px;
+    		margin-bottom:18px;
+}
+	.card-video{
+    		width:100%;
+    		border-radius:18px;
+		margin-bottom:18px;
+}
+
+	.card-text{
+    		line-height:1.8;
+    		color:#D8DDF7;
+}
+
+	.card-icon {
+        	display: block;
+        	width: 80px;
+        	height: 80px;
+        	margin: 20px auto;
+        	object-fit: cover;
+        	border-radius: 50%;
+        	opacity: 0.8; 
+       	 	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+    	.divider {
+       		text-align: center;
+        	margin: 15px 0;
+        	color: #B9C8FF;
+        	letter-spacing: 2px;
+}
+
+	.card-btn{
+    		display:inline-block;
+    		margin-top:20px;
+    		padding:10px 22px;
+    		border-radius:30px;
+    		border:1px solid rgba(255,255,255,0.25);
+    		color:white;
+    		text-decoration:none;
+		transition:0.3s;
+}
+
+	.card-btn:hover{
+    		background:white;
+		color:#111827;
+}
+
+ 	.footer {
+            	text-align: center;
+            	padding: 30px;
+            	color: white;
+            	font-size: 14px;
+}
+
+</style>
+</head>
+
+	<body>
+
+	<div class="overlay">
+
+	<nav>
+
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About Me</a></li>
+		<li><a href="family.html">My Family</a></li>
+		<li><a href="education.html">Education</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+
+	</nav>
+
+	<div class="hero">
+
+	<div class="small-title">
+		✦ PERSONAL WEBSITE ✦
+	</div>
+
+	<div class="main-title">
+		SYIFAA'S<br>
+		BLOG
+	</div>
+
+	<div class="quote">
+		“Lost in the rain and old streets of Edinburgh.”
+	</div>
+
+	</div>
+
+	<div class="card-section">
+
+	<div class="card">
+
+	<div class="card-title">
+		About Me
+	</div>
+
+	<img src="gambarCipaa1.jpg">
+	<br>
+	<div class="card-text">
+		A dreamer who loves cold weather, the calmness of late night and the peaceful beauty of Edinburgh.
+	</div>
+
+	</div>
+
+	<div class="card">
+
+	<div class="card-title">
+		Quotes
+	</div>
+	<img src="quotes1.jpg" class="card-icon" alt="Quotes Icon">
+
+	<div class="card-text">
+		<i>"Where words fail, songs speak for me."</i>
+	<br>
+	<br>
+	<div class="divider">
+                ✦ —————— ✧ —————— ✦
+        </div>
+	<br>
+	<img src="quotes2.jpg" class="card-icon" alt="Quotes Icon">
+
+		<i>"There is a special kind of peace that only exists in the 2AM air."</i>
+	<br>
+	<br>
+	<div class="divider">
+                ✦ —————— ✧ —————— ✦
+        </div>
+	<br>
+	<img src="quotes3.jpg" class="card-icon" alt="Quotes Icon">
+
+		<i>"Finding my balance between the bitterness of coffee and the sweetness of matcha."</i>
+
+	<br>
+	<br>
+	<div class="divider">
+                ✦ —————— ✧ —————— ✦
+        </div>
+
+	</div>
+
+	</div>
+
+	<div class="card">
+
+	<div class="card-title">
+		Blog Inspiration
+	</div>
+
+	<video class="card-video" autoplay muted loop playsinline>
+		<source src="Edinburgh1.mp4" type="video/mp4">
+	</video>
+
+	<div class="card-text">
+		✦ This blog inspired by the magical atmosphere of Edinburgh, Scotland ✦
+	</div>
+
+	</div>
+
+	</div>
+
+	<div class="footer">
+		© 2026 NURUL SYIFAA' | IML470 INDIVIDUAL PROJECT	
+	</div>
+	</div>
+  		<audio id="syifaaAudio" loop hidden>
+    		<source src="audioHome.mp3" type="audio/mpeg">
+  		</audio>
+  	<script>
+    		const audio = document.getElementById("syifaaAudio"); 
+    		function startAudio() {
+      		audio.play().catch(function(error) {
+        	console.log;
+      });
+    }
+
+    		window.addEventListener('scroll', startAudio, { once: true });
+   	 	window.addEventListener('mousemove', startAudio, { once: true });
+    		window.addEventListener('touchstart', startAudio, { once: true });
+    		window.addEventListener('click', startAudio, { once: true });
+  	</script>
+
+
+</body>
+</html>

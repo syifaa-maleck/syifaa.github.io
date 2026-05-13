@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+	body {
+		margin: 0;
+		background-image: url('background1.png');
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		font-family: 'Poppins', sans-serif;
+		color: white;
+}
+
+	.overlay {
+		min-height: 100vh;
+		background: rgba(10, 15, 30, 0.7);
+}
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 25px 70px;
+		background: rgba(0, 0, 0, 0.20);
+		backdrop-filter: blur(6px);
+}
+
+	nav ul {
+		list-style: none;
+		display: flex;
+		gap: 40px;
+		margin: 0;
+		padding: 0;
+}
+
+	nav ul li a {
+		text-decoration: none;
+		color: #F2F4FF;
+		font-size: 15px;
+		transition: 0.3s;
+}
+
+	nav ul li a:hover {
+		color: #B9C8FF;
+		text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+
+}
+
+	.title-serif {
+		font-family: 'Cormorant Garamond', serif;
+		font-size: 50px;
+		color: #ffffff;
+		text-shadow: 0 0 15px rgba(255,255,255,0.4);
+		margin-bottom: 10px;
+
+}
+
+	.contact-container {
+		display: flex;
+		gap: 60px;
+		padding: 40px 90px 80px;
+		justify-content: center;
+		flex-wrap: wrap;
+}
+
+	.contact-info {
+		flex: 1;
+		min-width: 300px;
+}
+
+	.contact-info h2 {
+		font-family: 'Cormorant Garamond', serif;
+		font-size: 45px;
+		margin-bottom: 10px;
+}
+
+	.contact-info p {
+		color: #B9C8FF;
+		margin-bottom: 40px;
+}
+
+	.info-item {
+		display: flex;
+		gap: 15px;
+		margin-bottom: 30px;
+}
+
+	.info-item i {
+		font-size: 20px;
+		color: #B9C8FF;
+		margin-top: 5px;
+}
+
+	.info-text span {
+		display: block;
+		font-weight: 600;
+		letter-spacing: 1px;
+		margin-bottom: 5px;
+}
+
+	.contact-form {
+		flex: 1.5;
+		min-width: 350px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 15px;
+}
+
+	.contact-form input, .contact-form textarea {
+		background: rgba(255, 255, 255, 0.05);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		padding: 15px;
+		border-radius: 8px;
+		color: white;
+		font-family: 'Poppins', sans-serif;
+		outline: none;
+		transition: 0.3s;
+}
+
+	.contact-form input:focus, .contact-form textarea:focus {
+		border-color: #B9C8FF;
+		background: rgba(255, 255, 255, 0.1);
+}
+
+	.contact-form textarea {
+		grid-column: span 2;
+		height: 150px;
+		resize: none;
+}
+
+	.done-btn {
+		grid-column: span 2;
+		justify-self: end;
+		background: #B9C8FF;
+		color: #111827;
+		padding: 12px 40px;
+		border: none;
+		border-radius: 5px;
+		font-weight: 600;
+		cursor: pointer;
+		transition: 0.3s;
+		text-transform: uppercase;
+}
+
+	.done-btn:hover {
+		background: #ffffff;
+		transform: scale(1.05);
+}
+
+	.social-links{
+		display:flex;
+		gap:15px;
+		margin-top:10px;
+		list-style:none;
+		padding:0;
+}
+
+	.social-links a {
+		color:#B9C8FF;
+		font-size:20px;
+		transition:0.3s;
+		text-decoration:none;
+}
+
+	.social-links a:hover {
+		color:white;
+		transform: translateY(-3px);
+		text-shadow:0 0 10px rgba(255,255,255,0.5);
+
+}
+
+	.social-icons-contact {
+		margin-top: 30px;
+		display: flex;
+		gap: 20px;
+		font-size: 22px;
+}
+
+	.social-icons-contact a {
+		color: white;
+		transition: 0.3s;
+}
+
+	.social-icons-contact a:hover {
+		color: #B9C8FF;
+}
+
+	.footer {
+		text-align: center;
+		padding: 30px;
+		color: white;
+		font-size: 14px;
+	}
+</style>
+</head>
+
+<body>
+	<div class="overlay">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="family.html">My Family</a></li>
+				<li><a href="education.html">Education</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+	<div class="contact-container">
+		<div class="contact-info">
+			<h2>CONTACT ME</h2>
+	<br>
+	<div class="info-item">
+				<i class="fa-solid fa-envelope"></i>
+				<div class="info-text">
+					<span>EMAIL</span>
+						contact@syifaa.me
+				</div>
+			</div>
+
+	<div class="social-icons-contact">
+		<li style="display:flex; align-items:center; gap:15px; margin-top:15px;">
+			<span>Social Media</span>
+			<div class="social-links">
+				<a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+>
+			</div>
+		</div>
+
+		<form class="contact-form">
+			<input type="text" placeholder="NAME" required>
+			<input type="email" placeholder="EMAIL" required>
+			<input type="text" placeholder="PHONE">
+			<input type="text" placeholder="SUBJECT">
+			<textarea placeholder="MESSAGE"></textarea>
+			<button type="submit" class="done-btn">DONE</button>
+		</form>
+		</div>
+	</div>
+
+		<div class="footer">
+			© 2026 NURUL SYIFAA' | IML470 INDIVIDUAL PROJECT	
+		</div>
+	</div>
+
+	<audio id="syifaaAudio" loop hidden>
+		<source src="audioHome.mp3" type="audio/mpeg">
+	</audio>
+
+	<script>
+		const audio = document.getElementById("syifaaAudio"); 
+		function startAudio() {
+			audio.play().catch(function(error) {
+				console.log("Audio play deferred");
+			});
+		}
+		window.addEventListener('scroll', startAudio, { once: true });
+		window.addEventListener('mousemove', startAudio, { once: true });
+		window.addEventListener('touchstart', startAudio, { once: true });
+		window.addEventListener('click', startAudio, { once: true });
+	</script>
+</body>
+</html>

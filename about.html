@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+
+	body{
+   		margin:0;
+    		background-image:url('background1.png');
+    		background-size:cover;
+    		background-position:center;
+    		background-attachment:fixed;
+    		font-family:'Poppins', sans-serif;
+    		color:white;
+}
+
+	.overlay{
+    		min-height:100vh;
+		background:rgba(10,15,30,0.7);
+}
+
+	nav{
+    		display:flex;
+    		justify-content:space-between;
+    		align-items:center;
+    		padding:25px 70px;
+    		background:rgba(0,0,0,0.20);
+   		backdrop-filter:blur(6px);
+}
+
+	nav ul{
+    		list-style:none;
+    		display:flex;
+    		gap:40px;
+    		margin:0;
+    		padding:0;
+}
+
+	nav ul li a{
+    		text-decoration:none;
+    		color:#F2F4FF;
+    		font-size:15px;
+    		transition:0.3s;
+}
+
+	nav ul li a:hover{
+    		color:#B9C8FF;
+    		text-shadow:0 0 10px rgba(255,255,255,0.7);
+}
+
+
+	.about-hero{
+    		padding:80px 90px 40px;
+		text-align:center;
+}
+
+        .about-container {
+            	display: flex;
+            	gap: 30px;
+            	padding: 0 90px 80px;
+            	justify-content: center;
+            	align-items: flex-start;
+
+}
+	.profile-card {
+            	flex: 1;
+            	max-width: 350px;
+            	background: rgba(20,25,40,0.65);
+            	backdrop-filter: blur(10px);
+            	border-radius: 25px;
+            	padding: 25px;
+            	box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            	text-align: center;
+}
+
+	.profile-card img {
+            	width: 100%;
+            	border-radius: 18px;
+            	margin-bottom: 20px;
+}
+
+	.content-card {
+            	flex: 2;
+            	background: rgba(20,25,40,0.4);
+            	padding: 40px;
+            	border-radius: 25px;
+}
+
+	.details-card {
+            	flex: 1.5;
+            	background: rgba(20,25,40,0.65);
+            	backdrop-filter: blur(10px);
+            	border-radius: 25px;
+            	padding: 30px;
+}
+
+	.hover-text {
+    		position: relative;
+    		color: #B9C8FF;
+    		cursor: pointer;
+    		font-weight: 600;
+
+}
+
+	.preview-img {
+    		position: absolute;
+    		bottom: 120%;
+    		left: 50%;
+    		transform: translateX(-50%);
+   		width: 150px;
+    		height: 100px;
+    		object-fit: cover;
+    		border-radius: 12px;
+    		border: 2px solid #B9C8FF;
+    		box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    		opacity: 0;
+    		visibility: hidden;
+    		transition: all 0.4s ease;
+    		z-index: 100;
+    		pointer-events: none;
+}
+
+	.hover-text:hover .preview-img {
+    		opacity: 1;
+    		visibility: visible;
+    		bottom: 140%;
+
+}
+
+	.title-serif {
+            	font-family: 'Cormorant Garamond', serif;
+            	font-size: 45px;
+            	color: #E8ECFF;
+            	margin-bottom: 20px;
+
+}
+
+	.about-text {
+            	line-height: 1.8;
+            	color: #D8DDF7;
+            	font-size: 17px;
+		text-align:justify;
+}
+
+        .info-list {
+            	list-style: none;
+            	padding: 0;
+
+}
+
+        .info-list li {
+            	margin-bottom: 20px;
+            	border-bottom: 1px solid rgba(255,255,255,0.1);
+            	padding-bottom: 10px;
+}
+
+        .info-list span {
+            display: block;
+            color: #B9C8FF;
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+}
+
+	.btn{
+    		display:inline-block;
+    		padding:15px 35px;
+    		border-radius:40px;
+    		background:#B9C8FF;
+    		color:#111827;
+    		text-decoration:none;
+    		font-weight:600;
+    		transition:0.3s;
+}
+
+	.btn:hover{
+    		transform:scale(1.05);
+    		background:#DDE4FF;
+    		box-shadow:
+    		0 0 15px rgba(255,255,255,0.5);
+}
+
+ 	.footer {
+            	text-align: center;
+            	padding: 30px;
+            	color: white;
+            	font-size: 14px;
+}
+
+	.social-links{
+		display:flex;
+		gap:15px;
+		margin-top:10px;
+		list-style:none;
+		padding:0;
+}
+
+	.social-links a {
+		color:#B9C8FF;
+		font-size:20px;
+		transition:0.3s;
+		text-decoration:none;
+}
+
+	.social-links a:hover {
+		color:white;
+		transform: translateY(-3px);
+		text-shadow:0 0 10px rgba(255,255,255,0.5);
+}
+
+	.skills-container {
+		display:flex;
+		gap:20px;
+		padding:0 90px 80px;
+		justify-content: center;
+		flex-wrap: wrap;
+}
+
+	.skill-card {
+		flex: 1;
+		min-width: 200px;
+		background: rgba(20,25,40,0.5);
+		backdrop-filter: blur(10px);
+		border-radius: 20px;
+		padding:20px;
+		text-align: center;
+		border: 1px solid rgba(185,20,255,0.2);
+		transition: 0.3s;
+}
+
+	.skill-card:hover {
+		transform: translateY(-5px);
+		background: rgba(185,200,255,0.1);
+}
+
+	.skill-name {
+		font-size: 16px;
+		color: #B9C8FF;
+		margin-bottom: 15px;
+		display: block;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+}
+
+	.meter-container {
+		background: rgba(255, 255, 255, 0.1);
+		border-radius: 10px;
+		height: 8px;
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+}
+
+	.meter-fill {
+		background: linear-gradient(90deg, #B9C8FF, #ffffff);
+		height: 100%;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(185, 200, 255, 0.5);
+}
+
+	.percentage-text {
+		display: block;
+		margin-top: 8px;
+		font-size: 12px;
+		color: #D8DDF7;
+}
+
+
+</style>
+</head>
+
+	<body>
+
+	<div class="overlay">
+
+	<nav>
+
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About Me</a></li>
+		<li><a href="family.html">My Family</a></li>
+		<li><a href="education.html">Education</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+
+	</nav>
+
+	<div class="about-hero">
+		<div class="title-serif" style="font-size: 20px; letter-spacing: 5px;">✦ ABOUT ME ✦</div>
+
+	<div class="about-container">
+
+	<div class="profile-card">
+                <img src="gambarCipaa1.jpg">                 
+		<div class="title-serif" style="font-size: 20px;">The Girl Behind the Screen</div>
+                <div class="about-text" style="font-style: italic; font-size: 14px;">
+
+			"Just a dreamer, lost in the rhythm of the rain."
+                </div>
+            </div>
+
+	<div class="content-card">
+                <div class="title-serif">The Author's Journal</div>
+                <div class="about-text">
+			<ul style="list-style: none; padding: 0;">
+				<li style="margin-bottom: 10px;"><strong>Name:</strong> Nurul Syifaa’ Binti Abdul Maleck</li>
+            			<li style="margin-bottom: 10px;"><strong>Age:</strong> 23 years old</li>
+				<li style="margin-bottom: 10px;"><strong>Date of Birth:</strong> 8 December 2003</li>
+				<li style="margin-bottom: 10px;"><strong>Place of Birth:</strong> Kuala Lumpur</li>
+				<li style="margin-bottom: 10px;"><strong>Current Obsession:</strong> Listening to Music</li>
+				<li style="margin-bottom: 10px;"><strong>Course:</strong> Bachelor of Information Science (Hons) Library Management</li>
+            			<li style="margin-bottom: 10px;"><strong>Institution:</strong> Universiti Teknologi MARA, Cawangan Kedah (UiTM)</li>
+            			
+                </div>
+            </div>
+
+	<div class="details-card">
+                <div class="title-serif" style="font-size: 28px;">Author's Footnotes</div>
+	<ul class="info-list">
+ 		<li>
+			<span>Interests</span>
+                        <span class="hover-text">Music <img src="music1.jpg" class="preview-img"></span>, 
+            		<span class="hover-text">Coffee <img src="coffee1.jpg" class="preview-img"></span>, 
+            		<span class="hover-text">Matcha <img src="matcha1.jpg" class="preview-img"></span>
+		</li>
+		<li>
+                        <span>Favorite Place</span>
+                        <span class="hover-text">📍Edinburgh <img src="edinburgh2.jpg" class="preview-img"></span>
+		</li>
+		<li>
+                        <span>Current Soundtrack</span>
+                        🎧 La Petite Fille De La Mer
+		</li>
+		<li>
+                        <span>Fun Fact</span>
+                        🎬 I love watching crime and thriller movies and stories
+		</li>
+		<li style="display:flex; align-items:center; gap:15px; margin-top:15px;">
+			<span>Social Media</span>
+			<div class="social-links">
+				<a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                </ul>
+            </div>
+        </div>
+
+	<div class="skills-container">
+		<div class="skill-card">
+			<span class="skill-name">Communication</span>
+			<div class="meter-container">
+				<div class="meter-fill" style="width: 50%;"></div>
+			</div>
+			<span class="percentage-text">80%</span>
+		</div>
+
+		<div class="skill-card">
+			<span class="skill-name">Teamwork</span>
+			<div class="meter-container">
+				<div class="meter-fill" style="width: 50%;"></div>
+			</div>
+			<span class="percentage-text">80%</span>
+		</div>
+
+		<div class="skill-card">
+			<span class="skill-name">Keyboarding Skill</span>
+			<div class="meter-container">
+				<div class="meter-fill" style="width: 50%;"></div>
+			</div>
+			<span class="percentage-text">90%</span>
+		</div>
+
+		<div class="skill-card">
+			<span class="skill-name">Shorthand</span>
+			<div class="meter-container">
+				<div class="meter-fill" style="width: 50%;"></div>
+			</div>
+			<span class="percentage-text">70%</span>
+		</div>
+
+		<div class="skill-card">
+			<span class="skill-name">Trengkas</span>
+			<div class="meter-container">
+				<div class="meter-fill" style="width: 50%;"></div>
+			</div>
+			<span class="percentage-text">75%</span>
+		</div>
+	</div>
+
+	<div class="footer">
+		© 2026 NURUL SYIFAA' | IML470 INDIVIDUAL PROJECT	
+	</div>
+	</div>
+  		<audio id="syifaaAudio" loop hidden>
+    		<source src="audioHome.mp3" type="audio/mpeg">
+  		</audio>
+  	<script>
+    		const audio = document.getElementById("syifaaAudio"); 
+    		function startAudio() {
+      		audio.play().catch(function(error) {
+        	console.log;
+      });
+    }
+
+    		window.addEventListener('scroll', startAudio, { once: true });
+   	 	window.addEventListener('mousemove', startAudio, { once: true });
+    		window.addEventListener('touchstart', startAudio, { once: true });
+    		window.addEventListener('click', startAudio, { once: true });
+  	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+	body{
+   		margin:0;
+    		background-image:url('background1.png');
+    		background-size:cover;
+    		background-position:center;
+    		background-attachment:fixed;
+    		font-family:'Poppins', sans-serif;
+    		color:white;
+}
+
+	.overlay{
+    		min-height:100vh;
+		background:rgba(10,15,30,0.7);
+}
+
+	nav{
+    		display:flex;
+    		justify-content:space-between;
+    		align-items:center;
+    		padding:25px 70px;
+    		background:rgba(0,0,0,0.20);
+   		backdrop-filter:blur(6px);
+}
+
+	nav ul{
+    		list-style:none;
+    		display:flex;
+    		gap:40px;
+    		margin:0;
+    		padding:0;
+}
+
+	nav ul li a{
+    		text-decoration:none;
+    		color:#F2F4FF;
+    		font-size:15px;
+    		transition:0.3s;
+}
+
+	nav ul li a:hover{
+    		color:#B9C8FF;
+    		text-shadow:0 0 10px rgba(255,255,255,0.7);
+}
+
+
+	.about-hero{
+    		padding:140px 90px;
+		text-align: center;
+
+}
+
+	.about-container {
+           	display: flex;
+            	gap: 30px;
+            	padding: 0 90px 80px;
+            	justify-content: center;
+            	align-items: stretch;
+
+}
+
+	.profile-card {
+            	flex: 1;
+            	max-width: 350px;
+            	background: rgba(20, 25, 40, 0.65);
+            	backdrop-filter: blur(10px);
+            	border-radius: 25px;
+            	padding: 25px;
+            	box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            	text-align: center;
+}
+
+	.profile-card img {
+            	width: 100%;
+            	border-radius: 18px;
+            	margin-bottom: 20px
+}
+
+	.content-card {
+            	flex: 2;
+            	background: rgba(20, 25, 40, 0.4);
+            	padding: 40px;
+            	border-radius: 25px;
+            	display: flex;
+            	flex-direction: column;
+            	justify-content: center;
+}
+
+	.details-card {
+            	flex: 1.5;
+            	background: rgba(20, 25, 40, 0.65);
+            	backdrop-filter: blur(10px);
+            	border-radius: 25px;
+            	padding: 30px;
+}
+
+	.title-serif {
+            	font-family: 'Cormorant Garamond', serif;
+            	font-size: 45px;
+            	color: #E8ECFF;
+            	margin-bottom: 20px;
+}
+
+        .about-text {
+            	line-height: 1.8;
+            	color: #D8DDF7;
+            	font-size: 17px;
+            	text-align: justify;
+}
+
+	.info-list {
+            	list-style: none;
+            	padding: 0;
+            	text-align: left;
+}
+
+        .info-list li {
+            	margin-bottom: 20px;
+            	border-bottom: 1px solid rgba(255,255,255,0.1);
+            	padding-bottom: 10px;
+}
+
+	.info-list span {
+            	display: block;
+            	color: #B9C8FF;
+            	font-size: 12px;
+            	letter-spacing: 2px;
+            	text-transform: uppercase;
+}
+
+	.btn{
+    		display:inline-block;
+    		padding:15px 35px;
+    		border-radius:40px;
+    		background:#B9C8FF;
+    		color:#111827;
+    		text-decoration:none;
+    		font-weight:600;
+    		transition:0.3s;
+}
+
+	.btn:hover{
+    		transform:scale(1.05);
+    		background:#DDE4FF;
+    		box-shadow:
+    		0 0 15px rgba(255,255,255,0.5);
+}
+
+
+	.card-section{
+    		display:flex;
+    		gap:30px;
+    		padding:0 90px 80px;
+    		flex-wrap:wrap;
+}
+
+	.card{
+    		width:300px;
+    		background:rgba(20,25,40,0.55);
+   		backdrop-filter:blur(10px);
+    		border-radius:25px;
+    		padding:25px;
+    		box-shadow:
+    		0 0 20px rgba(0,0,0,0.25);
+}
+
+	.card-title{
+    		font-family:'Cormorant Garamond', serif;
+    		font-size:35px;
+    		margin-bottom:20px;
+    		color:#E8ECFF;
+}
+
+	.card img{
+    		width:100%;
+   		border-radius:18px;
+    		margin-bottom:18px;
+}
+	.card-video{
+    		width:100%;
+    		border-radius:18px;
+		margin-bottom:18px;
+}
+
+	.card-text{
+    		line-height:1.8;
+    		color:#D8DDF7;
+}
+
+	.card-btn{
+    		display:inline-block;
+    		margin-top:20px;
+    		padding:10px 22px;
+    		border-radius:30px;
+    		border:1px solid rgba(255,255,255,0.25);
+    		color:white;
+    		text-decoration:none;
+		transition:0.3s;
+}
+
+	.card-btn:hover{
+    		background:white;
+		color:#111827;
+}
+
+ 	.footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            font-size: 14px;
+}
+
+</style>
+</head>
+
+	<body>
+
+	<div class="overlay">
+
+	<nav>
+
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About Me</a></li>
+		<li><a href="family.html">My Family</a></li>
+		<li><a href="education.html">Education</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+
+	</nav>
+
+	<div class="about-hero">
+
+		<div class="title-serif" style="font-size: 20px; letter-spacing: 5px;">✦ MY FAMILY ✦</div>
+
+         <div class="about-container">
+		<div class="profile-card">
+                    <img src="familyPhoto.jpg">
+                    <div class="title-serif" style="font-size: 28px;">Family</div>
+                    <div class="about-text" style="font-style: italic; font-size: 14px; text-align: center;">
+                        "Family is not an important thing. It's everything." — Michael J. Fox
+                    </div>
+                </div>
+		<div class="content-card">
+                <div class="title-serif">Family's Summary</div>
+		<div class="about-text">
+			I have learned a lot about discipline from my mother, who works as an office secretary. I have a twin sister, which makes me the second of four siblings.
+                        <br><br>
+			We are all still in students, my younger sister is a fourth semester diploma student at UiTM Arau, my youngest is in form two at SMK Sultanah Asma, my eldest sister is in her third semester of her degree at UiTM Kedah, and I'm in second semester of degree at UiTM Kedah. Despite our busy and hectic schedules, we are still close and supportive of one another.
+            			
+                </div>
+            </div>
+
+	</div>
+
+	<div class="footer">
+		© 2026 NURUL SYIFAA' | IML470 INDIVIDUAL PROJECT	
+	</div>
+	</div>
+  		<audio id="syifaaAudio" loop hidden>
+    		<source src="audioHome.mp3" type="audio/mpeg">
+  		</audio>
+  	<script>
+    		const audio = document.getElementById("syifaaAudio"); 
+    		function startAudio() {
+      		audio.play().catch(function(error) {
+        	console.log;
+      });
+    }
+
+    		window.addEventListener('scroll', startAudio, { once: true });
+   	 	window.addEventListener('mousemove', startAudio, { once: true });
+    		window.addEventListener('touchstart', startAudio, { once: true });
+    		window.addEventListener('click', startAudio, { once: true });
+  	</script>
+
+
+</body>
+</html>

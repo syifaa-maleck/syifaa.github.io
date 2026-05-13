@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body {
+		margin: 0;
+		background-image: url('background1.png');
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		font-family: 'Poppins', sans-serif;
+		color: white;
+}
+
+	.overlay {
+		min-height: 100vh;
+		background: rgba(10, 15, 30, 0.7);
+}
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 25px 70px;
+		background: rgba(0, 0, 0, 0.20);
+		backdrop-filter: blur(6px);
+}
+
+	nav ul {
+		list-style: none;
+		display: flex;
+		gap: 40px;
+		margin: 0;
+		padding: 0;
+}
+
+	nav ul li a {
+		text-decoration: none;
+		color: #F2F4FF;
+		font-size: 15px;
+		transition: 0.3s;
+}
+
+	nav ul li a:hover {
+		color: #B9C8FF;
+		text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+	.about-hero {
+		padding: 80px 90px 40px;
+		text-align: center;
+}
+
+	.title-serif {
+		font-family: 'Cormorant Garamond', serif;
+		font-size: 45px;
+		color: #E8ECFF;
+		margin-bottom: 20px;
+}
+
+	.education-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 30px;
+		padding: 0 90px 80px;
+		max-width: 1200px;
+		margin: 0 auto;
+}
+
+	.edu-card {
+		background: rgba(20, 25, 40, 0.65);
+		backdrop-filter: blur(10px);
+		border-radius: 25px;
+		padding: 30px;
+		text-align: center;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		transition: 0.3s;
+}
+
+	.edu-card:hover {
+		transform: translateY(-10px);
+		background: rgba(30, 35, 55, 0.8);
+}
+
+	.edu-logo {
+		width: 100px;
+		height:100px;
+		margin-bottom: 15px;
+		object-fit: contain;
+}
+
+	.edu-list {
+		text-align: left;
+		list-style: none;
+		padding: 0;
+		margin-top: 15px;
+		font-size: 14px;
+}
+
+	.edu-list li {
+		margin-bottom: 8px;
+		padding-left: 20px;
+		position: relative;
+}
+
+	.edu-list li::before {
+		content: "✦";
+		position: absolute;
+		left: 0;
+		color: #B9C8FF;
+}
+
+	.footer {
+		text-align: center;
+		padding: 30px;
+		color: white;
+		font-size: 14px;
+	}
+</style>
+</head>
+
+<body>
+	<div class="overlay">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="family.html">My Family</a></li>
+				<li><a href="education.html">Education</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+	<div class="about-hero">
+			<div class="title-serif" style="font-size: 20px; letter-spacing: 5px;">✦ MY EDUCATION ✦</div>
+		</div>
+
+		<div class="education-grid">
+			<div class="edu-card">
+				<img src="uitm1.png" class="edu-logo">
+				<div class="title-serif" style="font-size: 22px;">UiTM Cawangan Kedah</div>
+				<p style="color: #B9C8FF;">2025 - Present</p>
+				<ul class="edu-list">
+					<br>
+					<li><strong>Course:</strong> Bachelor of Information Science (Hons) Library Management</li>
+					<li><strong>Location:</strong> Merbok, Sungai Petani</li>
+				</ul>
+			</div>
+
+			<div class="edu-card">
+				<img src="politeknik1.png" class="edu-logo">
+				<div class="title-serif" style="font-size: 22px;">Politeknik Tuanku Syed Sirajuddin</div>
+				<p style="color: #B9C8FF;">2021 - 2024</p>
+				<ul class="edu-list">
+					<li><strong>Course:</strong> Diploma in Secretarial Science</li>
+					<li><strong>Location:</strong> Arau, Perlis</li>
+					<li><strong>Achievement:</strong> Dean's List (Semester 2)</li>
+					<li><strong>Internship:</strong> Jabatan Kastam Diraja Malaysia, Alor Setar</li>
+					<li><strong>Status:</strong> Completed</li>
+				</ul>
+			</div>
+
+			<div class="edu-card">
+				<img src="sekolah1.jpg" class="edu-logo">
+				<div class="title-serif" style="font-size: 22px;">Sekolah Menengah Kebangsaan Convent</div>
+				<p style="color: #B9C8FF;">2016 - 2020</p>
+				<ul class="edu-list">
+					<li><strong>Qualification:</strong> Sijil Pelajaran Malaysia (SPM) & PT3</li>
+					<li><strong>Course:</strong> Business and Art</li>
+					<li><strong>Location:</strong> Alor Setar, Kedah</li>
+					<li><strong>Status:</strong> Completed</li>
+				</ul>
+			</div>
+
+			<div class="edu-card">
+				<img src="sekolah2.png" class="edu-logo">
+				<div class="title-serif" style="font-size: 22px;">Sekolah Kebangsaan Sultanah Asma</div>
+				<p style="color: #B9C8FF;">2010 - 2015</p>
+				<ul class="edu-list">
+					<li><strong>Qualification:</strong>UPSR</li>
+					<li><strong>Achievement:</strong> 2A's</li>
+					<li><strong>Location:</strong> Alor Setar, Kedah</li>
+					<li><strong>Status:</strong> Completed</li
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer">
+			© 2026 NURUL SYIFAA' | IML470 INDIVIDUAL PROJECT	
+		</div>
+	</div>
+
+	<audio id="syifaaAudio" loop hidden>
+		<source src="audioHome.mp3" type="audio/mpeg">
+	</audio>
+
+	<script>
+		const audio = document.getElementById("syifaaAudio"); 
+		function startAudio() {
+			audio.play().catch(function(error) {
+				console.log("Audio play deferred");
+			});
+		}
+		window.addEventListener('scroll', startAudio, { once: true });
+		window.addEventListener('mousemove', startAudio, { once: true });
+		window.addEventListener('touchstart', startAudio, { once: true });
+		window.addEventListener('click', startAudio, { once: true });
+	</script>
+</body>
+</html>
